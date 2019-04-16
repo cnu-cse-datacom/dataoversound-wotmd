@@ -175,7 +175,7 @@ public class Listentone {
             for(int i=0; i<bufferedReadResult; i++){
                 chunks[i]=buffer[i];
             }
-            for(int i=0; i<blocksize-bufferedReadResult; i++){
+            for(int i=bufferedReadResult; i<blocksize; i++){
                 chunks[i]=0;
             }
 
